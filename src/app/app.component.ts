@@ -9,4 +9,11 @@ import { Book } from './book.model';
 export class AppComponent {
   title = 'cbse-app';
   selectedBook: Book | null = null;
+  bookFlag: boolean = false;
+
+  onButtonClick() {
+    if (!this.bookFlag)
+    this.bookFlag = true;
+    else this.bookFlag = false;
+  }
 }

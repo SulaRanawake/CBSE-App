@@ -10,12 +10,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { ServerBooksComponent } from './server-books/server-books.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookListComponent,
-    BookDetailsComponent
+    BookDetailsComponent,
+    ServerBooksComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatCardModule,
     MatDividerModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

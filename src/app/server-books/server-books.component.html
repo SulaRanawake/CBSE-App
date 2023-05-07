@@ -1,0 +1,9 @@
+<h2>Book List from Server</h2>
+<h4 *ngIf="!books">Please run the server to get the book list</h4>
+<mat-list *ngFor="let book of books" class="book-item">
+    <mat-list-item>
+        <span matListItemTitle>{{ book.title }} by {{ book.author }}</span>
+        <span matListItemLine>Price : Rs. {{ book.price }}</span>
+        <span matListItemLine>{{ book.description }}</span>
+    </mat-list-item>
+</mat-list>

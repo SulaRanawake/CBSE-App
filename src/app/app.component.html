@@ -1,5 +1,10 @@
+<div>
 <h1>Book List Application</h1>
-<div class="book-list-container">
+<button (click)="onButtonClick()" *ngIf="!bookFlag">Server Book List</button>
+<button (click)="onButtonClick()" *ngIf="bookFlag">Local Book List</button>
+<div class="book-list-container" *ngIf="!bookFlag">
     <app-book-list (bookSelected)="selectedBook = $event"></app-book-list>
     <app-book-details [selectedBook]="selectedBook"></app-book-details>
+</div>
+<app-server-books *ngIf="bookFlag"></app-server-books>
 </div>
