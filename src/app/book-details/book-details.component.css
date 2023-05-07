@@ -1,0 +1,17 @@
+.book-details {
+    width: 60%;
+}
+
+@media screen {
+    .book-details {
+        width: 100%;
+    }
+}
+
+.example-card {
+    max-width: 100%;
+}
+
+.card-img {
+    max-width: 400px;
+}

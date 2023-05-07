@@ -1,0 +1,18 @@
+<div class="book-details" *ngIf="selectedBook">
+  <h2>Book Details</h2>
+  <div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>
+          <h3>Title : {{ selectedBook.title }}</h3>
+        </mat-card-title>
+        <mat-card-subtitle>Author : {{ selectedBook.author }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class="card-img" [src]="selectedBook.image" alt="Photo of {{selectedBook.title}}">
+      <mat-card-content>
+        <p>{{ selectedBook.description }}</p>
+      </mat-card-content>
+      <mat-card-footer>Rs. {{ selectedBook.price }}</mat-card-footer>
+    </mat-card>
+  </div>
+</div>
