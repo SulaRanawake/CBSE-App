@@ -1,0 +1,47 @@
+.book-list-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-list {
+    width: 40%;
+    margin-right: 2rem;
+}
+
+.book-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.book-list li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.book-list li img {
+    width: 5rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.book-item {
+    margin: 5px;
+    padding: auto;
+    background-color:beige;
+    border-radius: 2%;
+}
+
+@media screen {
+    .book-list {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.example-card {
+    max-width: 800px;
+    align-items: center;
+}
